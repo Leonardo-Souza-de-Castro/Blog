@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- <header class="cabecalho">
+        <a href="cadastro.html">Novo Post</a>
+    </header> -->
+    <div class="cabecalho">
+        <a href="cadastro.html"><img src="/assets/img/mais.png" alt="Simbolo de mais" class="mais"></a>
+    </div>
+    <h1 class="titulo_pagina">Posts</h1>
+    <% for(var i = 0; i < resposta.length; i++) {%>
+        <section class="container-consulta" >
+            <div class="box-total" >
+                <div class="box-paciente">
+                    <div class="box-info-paciente">
+                        <span class="dados-consulta titulo"><%= resposta[i].db_titulo %></span>
+                        <span class="dados-consulta resumo"><%= resposta[i].db_resumo %></span>
+                        <span class="dados-consulta conteudo"><%= resposta[i].db_conteudo %></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+    <% } %>
+</body>
+</html>
